@@ -22,21 +22,18 @@ int main(int argc, const char * argv[]) {
     check = f_perfect(x);
     AnswerCheck(check);
     
-  
-    int a = 1;
-    int b = 2;
-    int c = 3;
-    
     
     int p = f_collatz_count(200);
-    
-    printf("%d \n",p);
-    
     
     f_strings("T", "KEK", "");
     
     f_sort(3,1,2,"");
     
+    printf("%d",f_str_search("ana", "ana ate the banana"));
+    
+    printf("%d",f_cubes_sum(273));
+    
+    f_rotate(1234567, 2);
     
 
 }

@@ -86,41 +86,28 @@ bool f_perfect(int x)
 
 
 //4
-int f_rotate(int n, int r)
-{
-  
-    return 0;
-}
+int f_rotate(int n, int r){
+      
+    
+  }
 
 //5
 int f_str_search(char *pattern, char *text){
     
-    int i;
-    int M = pattern;
-    int N = text;
-    
-    /* A loop to slide pat[] one by one */
-    for (i = 0; i <= N - M; i++)
+    //Initiates a counter variable to keep track of how many occurences are in the text
+    int count = 0;
+    // Create a temporary char* to hold the contents of the text
+    const char *tmp = text;
+    //Searches the temporary char* and adds 1 to counter every time a pattern is matched
+    while((tmp = strstr(tmp, pattern)))
     {
-        int j;
-        
-        /* For current index i, check for pattern match */
-        for (j = 0; j < M; j++)
-        {
-            if (text[i+j] != pattern[j])
-                break;
-        }
-        if (j == M)  // if pat[0...M-1] = txt[i, i+1, ...i+M-1]
-        {
-            printf("Pattern found at index %d \n", i);
-            
-            
-        }
+        tmp++;
+        count++;
     }
-
-    return i;
+    
+    return count;
+   
 }
-
 
 //6
 int f_collatz_count(int n){
@@ -243,27 +230,8 @@ void f_sort(int x, int y, int z, char* list){
 
 char* f_cubes_sum(int n){
     
-    int holder = n;
-    int a= 0;
-    int b = n;
-    int answer;
-    for(; holder >=0; holder--){
-        
-        answer = pow(a,3) + pow(b,3);
-        
-        
-            
-            printf("%d \n", answer);
-            
-        
-        
-        a++;
-        b--;
-        
-        
-    }
     
-    return NULL;
+    return "LLL";
 }
 
 

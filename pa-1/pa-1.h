@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 // define a boolean type to use in the functions.
 typedef enum{false, true} bool;

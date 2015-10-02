@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
    
     bool check;
     
-    int n = 128;
+    int n = 189;
     check = f_armstrong(n);
     AnswerCheck(check);
     
@@ -22,29 +22,27 @@ int main(int argc, const char * argv[]) {
     check = f_perfect(x);
     AnswerCheck(check);
     
+  
+    int a = 1;
+    int b = 2;
+    int c = 3;
     
     
-    int a= 0;
-    int b = n;
-    int answer;
-        
+    int p = f_collatz_count(200);
+    
+    printf("%d \n",p);
+    
+    
+    f_strings("T", "KEK", "");
+    
+    f_sort(3,1,2,"");
+    
+    
 
-        answer = (n/2);
-        answer = pow(answer,1/3.);
-        a = answer;
-        b = answer;
-        
-    if(pow(a,3) + pow(b,3) == n){
-        
-            answer = pow(a,3) + pow(b,3);
-        
-        printf("%d \n", answer);
-        
-    }else{
-        printf("NO ANSWER");
-    }
-    
 }
+
+    
+
 
 
 

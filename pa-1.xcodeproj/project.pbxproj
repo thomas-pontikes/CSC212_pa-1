@@ -241,6 +241,7 @@
 				E23526BF1BBDAF22000EF5D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

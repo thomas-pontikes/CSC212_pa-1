@@ -214,7 +214,7 @@ char* f_cubes_sum(int n){
     int a;
     int b;
     char *return_;
-    return_ = malloc(2);
+    return_ = malloc(20);
     
     
     for(a = 0; a*a*a <= n ; a++)
@@ -227,5 +227,6 @@ char* f_cubes_sum(int n){
             
                 return return_;
             }
+    free(return_);
         return NULL;
 }

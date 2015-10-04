@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <time.h>
 
 // define a boolean type to use in the functions.
 typedef enum{false, true} bool;

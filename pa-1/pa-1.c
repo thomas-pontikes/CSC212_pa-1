@@ -8,7 +8,6 @@ bool f_armstrong(int n)
     int holder;
     int remainder;
     int new_num=0;
-    bool answer;
     
     holder = n;
     
@@ -22,45 +21,42 @@ bool f_armstrong(int n)
     }
     
     if(new_num==n){
-        answer = true;
+        return true;
     }else{
-     answer = false;
+     return false;
     }
-    return answer;
-
 }
 
 
-/*
+
 bool f_brackets(char *e)
 {
     int left = 0;
     int right = 0;
-    bool answer;
+    int length = (int)strlen(e);
     
-    for (int i=0;i< sizeof e;i++)
     
+    for (int i = 0; i < length; i++)
     {
-        
-        if (&e == "[")
+
+        if (e[i] == '[')
             
             left++;
     
-        if (e[i]=="]")
+        if (e[i] == ']')
             
             right++;
-        
-        if (left == right)
-            
-            answer = true;
-            break;
-        
     }
-
-    return answer;
+    
+    
+    if (left == right){
+        return true;
+    }else{
+        return false;
+    }
   
 }
- */
+
 
 //3
 bool f_perfect(int x)
@@ -87,9 +83,21 @@ bool f_perfect(int x)
 
 //4
 int f_rotate(int n, int r){
-      
     
-  }
+    n = 24579;
+    r = 2;
+    char* shift;
+    
+    shift = malloc(n);
+    
+   
+    
+
+    
+    return 0;
+}
+
+
 
 //5
 int f_str_search(char *pattern, char *text){
@@ -139,7 +147,43 @@ int f_collatz_count(int n){
 
 
 //7
-//float f_array(int n);
+float f_array(int n){
+    
+    //The variables are initialized for the array and two integers, one that counts how many times a loop finds a number divisable by 3 and one that holds the sum of all those numbers so it can be averaged.
+    int A[n];
+    int count = 0;
+    int sum = 0;
+    
+    
+    //This initiates the random function used to fill the array with random numbers.
+    srand((int)time(NULL));
+    
+   //This loop fills the array of length n with random numbers from 0-100 and then multiplies each number by 2.
+    for(int i=0; i<=n; i++){
+
+        A[i] = ((rand() % 100 +1) * 2);
+        
+    }
+    //This loop goes through the array and looks to see if a number is divisable by 3. If it finds one it is added to the "sum" variable and adds one to the "count" variable.
+    for(int i=0; i<=n; i++){
+        
+        if(count >= 5){
+            break;
+        }
+        
+        if(A[i] % 3 == 0) {
+            sum+= A[i];
+            count++;
+            }
+        
+      
+}
+    
+    //The function returns sum/count or the average
+    return sum/count;
+
+}
+
 
 //8
 void f_strings(char* s1, char* s2, char* s3){
@@ -229,6 +273,9 @@ void f_sort(int x, int y, int z, char* list){
 //10
 
 char* f_cubes_sum(int n){
+
+   
+
     
     
     return "LLL";

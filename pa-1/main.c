@@ -14,26 +14,13 @@ int main(int argc, const char * argv[]) {
    
     bool check;
     
-    int n = 189;
-    check = f_armstrong(n);
-    AnswerCheck(check);
-    
-    int x = 28;
-    check = f_perfect(x);
-    AnswerCheck(check);
     
     
-    int p = f_collatz_count(200);
+    AnswerCheck(f_brackets("[]]]][[[[][][][[]]"));
     
-    f_strings("T", "KEK", "");
+    f_rotate(0, 0);
     
-    f_sort(3,1,2,"");
-    
-    printf("%d",f_str_search("ana", "ana ate the banana"));
-    
-    printf("%d",f_cubes_sum(273));
-    
-    f_rotate(1234567, 2);
+    printf("Average: %f ", f_array(1000));
     
 
 }

@@ -28,9 +28,8 @@ bool f_brackets(char *e)
     int left = 0;
     int right = 0;
     int length = (int)strlen(e);
-    for (int i = 0;
-         i < length;
-         i++)
+    int i;
+    for (i = 0;i < length;i++)
     {
         if (e[i] == '[')
             left++;

@@ -121,18 +121,15 @@ float f_array(int n){
     int A[n];
     int count = 0;
     int sum = 0;
+    int i;
     //This initiates the random function used to fill the array with random numbers.
     srand((int)time(NULL));
     //This loop fills the array of length n with random numbers from 0-100 and then multiplies each number by 2.
-    for(int i=0;
-        i<=n;
-        i++){
+    for(i=0; i<=n; i++){
         A[i] = ((rand() % 100 +1) * 2);
     }
     //This loop goes through the array and looks to see if a number is divisable by 3. If it finds one it is added to the "sum" variable and adds one to the "count" variable.
-    for(int i=0;
-        i<=n;
-        i++){
+    for(i=0;i<=n;i++){
         if(count >= 5){
             break;
         }

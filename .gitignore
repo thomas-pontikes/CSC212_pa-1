@@ -5,3 +5,5 @@
 *.xml
 pa-1/nbproject/private/CodeAssistancePathMapper.properties
 *.properties
+
+*.out

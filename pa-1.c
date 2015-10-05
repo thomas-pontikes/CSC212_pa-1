@@ -143,41 +143,38 @@ float f_array(int n){
 //8
 void f_strings(char* s1, char* s2, char* s3){
     printf("\n Function: f_strings \n\n");
-    //Initialize two variables to hold the length of each parameter
-    double char1 = strlen(s1);
-    double char2 = strlen(s2);
+    //Initialize tw0 variables to hold the length of each parameter
+    int char1 = (int)strlen(s1);
+    int char2 = (int)strlen(s2);
+    //allocates enough memory to include three inputs with a max of 50 charactors each
+    s3[150];
     //Checks the length and if the strings are the same length before continuing
     while(true){
-        if(char1 > 50){
+        if(char1 > 50 || char2 > 50){
             printf("One of your inputs has more than 50 charactors.\n");
-            return;
-        }
-        if(char2 > 50){
-            printf("One of your inputs has more than 50 charactors.\n");
-            return;
+            break;
         }
         if(char1 == char2){
             printf("Your inputs are the same size.\n");
-            return;
+            break;
         }
         break;
     }
-    //allocates enough memory to include three inputs with a max of 50 charactors each
-    s3 = malloc(150);
     //Compares the lengths, then concatinates the strings accordingly
     if(char1 > char2){
-        stpcpy(stpcpy(stpcpy(s3, s2), s1), s2);
+        sprintf(s3,"<%s><%s><%s>",s2,s1,s2);
+    
     }else{
-        stpcpy(stpcpy(stpcpy(s3, s1), s2), s1);
+        
+        sprintf(s3,"<%s><%s><%s>",s1,s2,s1);
     }
-    //Prints the output of the strings and frees the allocated memory for s3
-    printf("%s \n",s3);
-    free(s3);
+    
 }
 //9
 void f_sort(int x, int y, int z, char* list){
     printf("\n Function: f_sort \n\n");
     printf("Original: %d %d %d \n", x,y,z);
+    list[x+y+z];
     //Initialize an int to help sort the numbers
     int sort;
     //This section looks at the inputs and swaps them according to their sizes.
@@ -200,12 +197,10 @@ void f_sort(int x, int y, int z, char* list){
         x = y;
         y = sort;
     }
-    //Allocates memory for the list and adds in the values
-    list = malloc(3);
-    sprintf(list, "%d %d %d" ,x,y,z);
-    //The values are printed in the correct order and the allocated memory is freed
-    printf("New Order: %s \n",list);
-    free(list);
+    //adds in the values to the list
+    
+    sprintf(list,"Sorted: %d %d %d",x,y,z);
+    
 }
 //10
 char* f_cubes_sum(int n){

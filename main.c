@@ -11,12 +11,18 @@
 void BoolCheck(bool a);
 void IntCheck(int a);
 void NullCheck(char *a);
+void VoidCheck(char *a);
+char a[50];
 
 int main(int argc, const char * argv[]) {
-   
-    bool check;
+
+
+ f_strings("tom", "pontikes", a);
+ VoidCheck(a);
     
-    f_sort(100, 20, 8, "");
+    
+f_sort(100, 20, 8,a);
+VoidCheck(a);
     
     NullCheck(f_cubes_sum(72));
     
@@ -69,5 +75,16 @@ void NullCheck(char *a){
 }else{
         printf("%s\n",a);
 }
+    
 }
+
+void VoidCheck(char *a){
+    
+    printf(" %s \n",a);
+
+   
+        
+    }
+    
+
 

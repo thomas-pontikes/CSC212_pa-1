@@ -5,7 +5,10 @@
 #include <time.h>
 
 // define a boolean type to use in the functions.
+#ifndef _BOOL_TYPE_
+#define _BOOL_TYPE_
 typedef enum{false, true} bool;
+#endif
 
 //1
 bool f_armstrong(int n);

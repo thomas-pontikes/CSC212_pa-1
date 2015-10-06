@@ -17,35 +17,31 @@ char a[50];
 int main(int argc, const char * argv[]) {
 
 
- f_strings("tom", "pontikes", a);
- VoidCheck(a);
-    
-    
-f_sort(100, 20, 8,a);
-VoidCheck(a);
-    
-    NullCheck(f_cubes_sum(72));
     
     BoolCheck(f_armstrong(373));
     
-    IntCheck(f_collatz_count(1000));
+    BoolCheck(f_brackets("[[[]]]"));
+    
+    BoolCheck(f_perfect(28));
+    
+    IntCheck(f_rotate(24579, 3));
     
     IntCheck(f_str_search("ana", "ana ate the banana"));
     
-    BoolCheck(f_brackets("[]]]][[[[][][][[]]"));
+    IntCheck(f_collatz_count(1000));
     
-    printf("%d",f_rotate(245798989,3));
+    IntCheck(f_array(100));
     
-    printf("Average: %f \n", f_array(1000));
+    f_strings("Tom", "Pontikes", a);
+    printf("%s \n",a);
     
+    f_sort(420, 69, 13, a);
+    printf("%s \n",a);
+    
+    NullCheck(f_cubes_sum(79));
+ 
 
 }
-
-    
-
-
-
-
 
 
 
@@ -66,6 +62,7 @@ void BoolCheck(bool a){
             printf("False \n");
 }
 
+
 void NullCheck(char *a){
     
     if(a == NULL){
@@ -80,11 +77,10 @@ void NullCheck(char *a){
 
 void VoidCheck(char *a){
     
-    printf(" %s \n",a);
+    printf("%s \n",a);
 
    
-        
-    }
+}
     
 
 
